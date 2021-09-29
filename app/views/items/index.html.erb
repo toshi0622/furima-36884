@@ -130,9 +130,7 @@
       <ul class='item-lists'>
         <% @items.each do |item| %>
           <li class='list'>
-            <%# 詳細表示でパスの再設定、showアクションがポイント %>
             <%= link_to item_path(item.id), method: :get do %>
-            <%# 詳細表示でパスの再設定、showアクションがポイント %>
               <div class='item-img-content'>
                 <%= image_tag item.image, class: "item-img" %>
 
