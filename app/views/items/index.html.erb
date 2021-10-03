@@ -133,15 +133,11 @@
             <%= link_to item_path(item.id), method: :get do %>
               <div class='item-img-content'>
                 <%= image_tag item.image, class: "item-img" %>
-
-                <%# <% 商品購入の実装が終わった後に再度設定する%>
-                <%# <% if @item.present? %>
+                <% if item.order.present? %>
                   <div class='sold-out'>
                     <span>Sold Out!!</span>
                   </div>
-                <%# end %>
-                <%# 商品購入の実装が終わった後に再度設定する %>
-                
+                <% end %>
               </div>
               <div class='item-info'>
                 <h3 class='item-name'>
